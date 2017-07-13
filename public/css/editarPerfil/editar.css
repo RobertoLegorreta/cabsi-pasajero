@@ -1,0 +1,297 @@
+#flexiblePrincipal{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%; 
+	height: 100vh;
+}
+
+/*BARRA SUPERIOR*/
+
+#encabezado{
+	width: 100%; 
+	height: 80px;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	background: #EA4E51;
+}
+
+#regresar{
+	cursor: pointer;
+	padding: 15px;
+	width: 30px; 
+	height: 30px;
+	margin: 0px; 
+}
+
+#regresar img{
+	width: 100%; 
+	height: 100%;
+}
+
+#tituloEditarCuenta{
+	font-family: GothamBook; 
+	font-size: 16px;
+	color: white;
+	flex-grow: 1; 
+	flex-basis: 0;
+}
+
+/*CONTENEDOR*/
+
+#flexibleEditar{
+	flex-grow: 1;
+	flex-basis: 0;
+	width: 100%; 
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+/*FLEXIBLE IZQUIERDO*/
+@media (max-width: 650px){
+	#flexibleIzquierdo{
+		width: 100%; 
+		height: 100%; 
+	}
+
+	#flexibleDerecho{
+		display: none;
+	}
+}
+
+@media (min-width: 651px){
+	#flexibleIzquierdo{
+		width: 325px; 
+		height: 100%; 
+		border-right: 1px solid #DADADA;
+	}
+
+	#flexibleDerecho{
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	}
+}
+
+/*UNICO INPUT EN flexibleIzquierdo*/
+#subirFoto{
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	width: 85px;
+	height: 85px; 
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+	background: white;
+	border: 1px solid #EA4E51; 
+	display: flex; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+}
+
+.camara{
+	width: 40px; 
+	height: 40px;
+}
+
+.fotoSubidaInput{ /*SE EJECUTA CUANDO EL USUARIO HA SUBIDO UNA FOTO*/
+	object-fit: cover;
+	object-position: center;
+	vertical-align: top; 
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+	width: 100%; 
+	height: 100%;
+}
+
+#subirFoto input{
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	top: -25px;
+	width: 85px; 
+	height: 110px;
+	opacity: 0;
+	border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-o-border-radius: 100px; 
+	-ms-border-radius: 100px;
+
+}
+
+#subirFoto input label{
+	cursor: pointer;
+}
+
+/*LIST ITEMS FLEXIBLE IZQUIERDOS*/
+
+.listItem{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	border-top: 1px solid #DADADA;
+}
+
+.listItemFinal{
+	border-bottom: 1px solid #DADADA;
+}
+
+.listItem:hover{
+	background: rgba(218,218,218, .15);
+}
+
+.seleccionado{
+	background: rgba(218,218,218, .15);
+}
+
+.seleccionado p{
+	font-family: GothamMedium !important;
+}
+
+.flexVertical{
+	flex-grow: 1; 
+	flex-basis: 0;
+}
+
+.tituloItem{
+	font-family: GothamBook;
+	font-size: 14px; 
+	color: #838383;
+	margin: 8px;
+	margin-left: 30px; 
+}
+
+.infoItem{
+	font-size: 15px; 
+	font-family: GothamBook; 
+	color: #EA4E51;
+	margin: 8px; 	
+	margin-left: 30px; 
+}
+
+#ir{
+	width: 30px; 
+	height: 30px; 
+	padding: 15px; 
+	cursor: pointer;
+	margin: 0;
+}
+
+/*FLEXIBLE DERECHO*/
+@media (max-width: 651px){
+	#flexibleDerecho{
+		display: none;
+		position: fixed;
+		width: 100%; 
+		height: 100vh;
+		top: 0;
+		left: 0;
+	}
+
+	#cerrarFlexibleDerecho{
+		display: block;
+	}
+
+	#flexibleDerecho input{
+		margin: 50px auto 0 auto;
+	}
+}
+
+@media (min-width: 651px){
+	#flexibleDerecho{
+		display: block;
+	}
+
+	#cerrarFlexibleDerecho{
+		display: none;
+	}
+
+	#flexibleDerecho input{
+		margin: 0 auto;
+	}
+}
+
+#flexibleDerecho{
+	background: white;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px; 
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#flexibleDerecho input{
+	display: block;
+	width: 80%; 
+	outline: none;
+	border: none;
+	color: black;
+	border-bottom: 1px solid black;
+	padding: 15px;
+	font-family: GothamBook; 
+	font-size: 15px; 
+}
+
+#cerrarFlexibleDerecho{
+	cursor: pointer;
+	position: fixed;
+	padding: 15px;
+	left: 5px; 
+	top: 5px; 
+	width: 30px; 
+	height: 30px;
+	margin: 0px; 
+}
+
+#cerrarFlexibleDerecho img{
+	width: 100%; 
+	height: 100%; 
+}
+
+
+#botonGuardar{
+	width: 95%;
+	max-width: 400px;
+	cursor: pointer;
+	font-family: GothamBlack;
+	font-size: 16px;
+	background: black;
+	color: white;
+	margin: 30px auto;
+	padding: 18px 0;
+	text-align: center;
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-ms-border-radius: 3px; 
+	-o-border-radius: 3px; 
+}
