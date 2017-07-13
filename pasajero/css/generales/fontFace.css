@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'GothamLight';
+  src: url('../../objetos/fuentes/Gotham-Light.otf');
+}
+
+@font-face {
+  font-family: 'GothamThin';
+  src: url('../../objetos/fuentes/Gotham-Thin.otf');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../../objetos/fuentes/Gotham-Book.otf');
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../../objetos/fuentes/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('../../objetos/fuentes/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: 'GothamBlack';
+  src: url('../../objetos/fuentes/Gotham-Black.otf');
+}
+
+
+
+
