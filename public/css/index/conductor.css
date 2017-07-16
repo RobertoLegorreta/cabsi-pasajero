@@ -87,7 +87,7 @@
 	-ms-border-radius: 100px; 
 }
 
-#cancelarConductor{
+#finalizarViaje{
 	cursor: pointer;
 	text-align: center !important;
 	padding-left: 10px !important; 
