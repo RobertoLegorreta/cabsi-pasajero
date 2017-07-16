@@ -82,23 +82,26 @@ $(document).on('ready', function(){
 
 		// var lat = marcadorActual.position.lat();
 		// var lng = marcadorActual.position.lng();
-		var usuario = firebase.auth().currentUser.uid;
+		// var usuario = firebase.auth().currentUser.uid;
 
-		var peticion = {
-			userKey: usuario,
-			timestamp: firebase.database.ServerValue.TIMESTAMP,
-			ubicacionQuieroIr: {lat: marcadorActual.position.lat(), lng: marcadorActual.position.lng()},
-			miUbicacion: {lat: miUbicacion.position.lat(), lng: miUbicacion.position.lng()}
-		}
+		// var peticion = {
+		// 	userKey: usuario,
+		// 	timestamp: firebase.database.ServerValue.TIMESTAMP,
+		// 	ubicacionQuieroIr: {lat: marcadorActual.position.lat(), lng: marcadorActual.position.lng()},
+		// 	miUbicacion: {lat: miUbicacion.position.lat(), lng: miUbicacion.position.lng()}
+		// }
 
-		var keyPeticion = firebase.database().ref('peticiones/').push().key;
+		// var keyPeticion = firebase.database().ref('peticiones/').push().key;
 
-		var actualizar = {};
-		actualizar['peticiones/' + keyPeticion] = peticion;
-		actualizar['usuarios/' + usuario + '/peticiones/' + keyPeticion] = true;
+		// var actualizar = {};
+		// actualizar['peticiones/' + keyPeticion] = peticion;
+		// actualizar['usuarios/' + usuario + '/peticiones/' + keyPeticion] = true;
 
-		firebase.database().ref().update(actualizar);
+		// firebase.database().ref().update(actualizar);
 	
+		firebase.database().ref('ubicacionTaxi').once('value', function(data){
+
+		});	
 
 	});
 	//Esto es temporal
