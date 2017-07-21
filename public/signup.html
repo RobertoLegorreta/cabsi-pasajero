@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
 	<!-- Favicon -->
-	<!-- <link rel="shortcut icon" type="image/png" href="objetos/generales/favicon.png"/> -->
+	<link rel="shortcut icon" type="image/png" href="objetos/generales/favicon.png"/>
  	<!-- Favicon -->
 
  	<!-- Manifiesto -->
@@ -19,18 +19,22 @@
 
 	<!-- Javascript -->
 	<script type="text/javascript" src="js/generales/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
-	<script type="text/javascript" src="js/sign/sign.js"></script>
-	<script type="text/javascript" src="js/sign/database.js"></script>
+	<script type="text/javascript" src="js/generales/validadores.js"></script>
+	<script type="text/javascript" src="js/sign/onReady.js"></script>
+	<script type="text/javascript" src="js/sign/determinaLogeado.js"></script>
+	<script type="text/javascript" src="js/sign/centrar.js"></script>
+	<script type="text/javascript" src="js/sign/signIn.js"></script>
+	<script type="text/javascript" src="js/sign/signUp.js"></script>
+	<script type="text/javascript" src="js/sign/signInOrSignUp.js"></script>
 
 
 </head>
 <body>
 	<section id="centrado">
 		<input id="email" type="email" name="" placeholder="Email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
-		<input id="password" type="password" name="" placeholder="Password">
-		<input id="sign" type="submit" value="SIGN IN">
-		<p id="anotacion">Don't have an account? <span id="signUp">Sign up!</span></p>
+		<input id="password" type="password" name="" placeholder="Contraseña">
+		<input id="sign" type="submit" value="INICIAR SESIÓN">
+		<p id="anotacion">¿No tienes una cuenta? <span id="signUp">Regístrate</span></p>
 	</section>
 </body>
 	

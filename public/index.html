@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
 	<!-- Favicon -->
-	<!-- <link rel="shortcut icon" type="image/png" href="objetos/generales/favicon.png"/> -->
+	<link rel="shortcut icon" type="image/png" href="objetos/generales/favicon.png"/>
  	<!-- Favicon -->
 
  	<!-- Manifiesto -->
@@ -23,8 +23,16 @@
 
 	<!-- Javascript -->
 	<script type="text/javascript" src="js/generales/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/index/index.js"></script>
+	<script type="text/javascript" src="js/index/onReady.js"></script>
+	<script type="text/javascript" src="js/index/determinaLogeado.js"></script>
+	<script type="text/javascript" src="js/index/menu.js"></script>
+	<script type="text/javascript" src="js/index/buscarTaxis.js"></script>
+	<script type="text/javascript" src="js/index/ponerMarcador.js"></script>
 	<script type="text/javascript" src="js/index/pedirTaxi.js"></script>
+	<script type="text/javascript" src="js/index/eliminarMarcador.js"></script>
+	<script type="text/javascript" src="js/index/mostrarTaxistaAsignado.js"></script>
+	<script type="text/javascript" src="js/index/finalizarViaje.js"></script>
+	<script type="text/javascript" src="js/index/estiloMapa.js"></script>
 
 
 </head>
@@ -52,7 +60,7 @@
 
 	<!-- #pedirTaxi -->
 	<p id="pedirTaxi">PEDIR TAXI</p>
-	<figure id="cerrarPedirTaxi">
+	<figure id="eliminarMarcador">
 		<img src="objetos/mapa/cerrar.png">
 	</figure>
 
@@ -70,15 +78,8 @@
 	</div>
 	<div id="conductor">
 		<figure id="fotoConductor">
-			<img src="objetos/imagenPrueba/prueba.jpg">
+			<img src="objetos/mapa/usuario.png">
 		</figure>
-
-		<!-- <div class="centrarContenido">
-			<figure>
-				<img src="objetos/conductor/tiempo.svg">
-			</figure>
-			<p id="tiempoDeLlegada">15 minutos (Aproximado)</p>
-		</div> -->
 		<div class="centrarContenido">
 			<figure>
 				<img src="objetos/conductor/conductor.svg">
