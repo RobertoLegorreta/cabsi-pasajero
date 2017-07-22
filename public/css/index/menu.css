@@ -28,6 +28,7 @@
 
 #barraMenu{
 	width: 300px; 
+	max-width: 75%;
 	height: 100vh;
 	background: white;
 	position: fixed;

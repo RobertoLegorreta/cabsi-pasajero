@@ -100,6 +100,9 @@ function pedirTaxiEnDatabase(taxi){
 			}
 		});
 	}else{
+		if(contador != null){
+			clearTimeout(contador);
+		}
 		cancelarPeticion();
 		alert('Lo sentimos, no hay taxis disponibles en este momento');
 	}
